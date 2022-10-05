@@ -162,6 +162,7 @@ end
 
 config system global
     set admin-sport "{ADMIN_PORT}"
+    set admintimeout 50
 end
 
 execute update-ips
