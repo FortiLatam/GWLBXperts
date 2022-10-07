@@ -678,24 +678,24 @@ Mappings:
             '648': FGTVM64BYOL648
             '702': FGTVM64BYOL702
             '703': FGTVM64BYOL703
-            '721': FGTVM64BYOL721
+            '722': FGTVM64BYOL722
         FortiGatePayg:
             '647': FGTVM64PAYG647
             '648': FGTVM64PAYG648
             '702': FGTVM64PAYG702
             '703': FGTVM64PAYG703
-            '721': FGTVM64PAYG721
+            '722': FGTVM64PAYG722
         FortiAnalyzerPayg:
             '647': FAZVM64PAYG647
         FortiAnalyzerByol:
             '647': FAZVM64BYOL647
     AWSAMIRegionMap:
         AMI:
-            FGTVM64PAYG721: >-
-                aws-marketplace/FortiGate-VM64-AWSONDEMAND build1254 (7.2.1)
+            FGTVM64PAYG722: >-
+                aws-marketplace/FortiGate-VM64-AWSONDEMAND build1255 (7.2.2)
                 GA-3124a694-441c-4ff1-8bf7-4d153be424a6
-            FGTVM64BYOL721: >-
-                aws-marketplace/FortiGate-VM64-AWS build1254 (7.2.1)
+            FGTVM64BYOL722: >-
+                aws-marketplace/FortiGate-VM64-AWS build1255 (7.2.2)
                 GA-e5936f4a-0d69-479f-919c-d5e158bd4d12
             FGTVM64BYOL702: >-
                 aws-marketplace/FortiGate-VM64-AWS build0234 (7.0.2)
@@ -865,8 +865,8 @@ Mappings:
             FGTVM64PAYG647: ami-089cad2a7a4d3501e
             FAZVM64PAYG647: ami-092d09c43615f60fe
         us-east-1:
-            FGTVM64PAYG721: ami-088a648de0cf2a8d0
-            FGTVM64BYOL721: ami-04a997b43f50bd2e8
+            FGTVM64PAYG722: ami-0cd6ef98ec787702b
+            FGTVM64BYOL722: ami-0b3319db6548e6ba9
             FGTVM64BYOL702: ami-03b05077372374ac2
             FGTVM64PAYG702: ami-0f37125f0c38e8ea8
             FGTVM64BYOL703: ami-07ebc2e34d5ce72f4
@@ -877,8 +877,8 @@ Mappings:
             FGTVM64PAYG647: ami-0d480c4d334beff0e
             FAZVM64PAYG647: ami-0a0f71766a5d2c79b
         us-east-2:
-            FGTVM64PAYG721: ami-081522f5e5c6464ac
-            FGTVM64BYOL721: ami-044408b80d602fd14
+            FGTVM64PAYG722: ami-0311d5e799e37bc0a
+            FGTVM64BYOL722: ami-06a058dbebecb20ba
             FGTVM64BYOL702: ami-06793c2af5608535d
             FGTVM64PAYG702: ami-0d64f9d41d2c347fe
             FGTVM64BYOL703: ami-056dda2f1e4afb543
@@ -909,8 +909,8 @@ Mappings:
             FGTVM64PAYG647: ami-0ba4f0fba1775c25c
             FAZVM64PAYG647: ami-05fdf75462fc4e17f
         us-west-1:
-            FGTVM64PAYG721: ami-002828408925ee484
-            FGTVM64BYOL721: ami-084283cfda81157b5
+            FGTVM64PAYG722: ami-0b107a3fa2ea40b90
+            FGTVM64BYOL722: ami-088f6e6cd7e2d1e80
             FGTVM64BYOL702: ami-02b8386b83b22a768
             FGTVM64PAYG702: ami-095959eb30adfa9a3
             FGTVM64BYOL703: ami-02f74eacda2205a3f
@@ -921,8 +921,8 @@ Mappings:
             FGTVM64PAYG647: ami-0ba8bcbaa9804c553
             FAZVM64PAYG647: ami-054b6a1f6bea49358
         us-west-2:
-            FGTVM64PAYG721: ami-0e9f40ac7253a4689
-            FGTVM64BYOL721: ami-0f323f6cddf382b3c
+            FGTVM64PAYG722: ami-0a70f5380706e13ac
+            FGTVM64BYOL722: ami-0eaa5af24f037c62f
             FGTVM64BYOL702: ami-0e569295bb3f6ab11
             FGTVM64PAYG702: ami-05558fc4d58e0311d
             FGTVM64BYOL703: ami-083a0794c27f644cd

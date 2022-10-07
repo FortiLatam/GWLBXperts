@@ -617,24 +617,24 @@ Mappings:
             '648': FGTVM64BYOL648
             '702': FGTVM64BYOL702
             '703': FGTVM64BYOL703
-            '721': FGTVM64BYOL721
+            '721': FGTVM64BYOL722
         FortiGatePayg:
             '647': FGTVM64PAYG647
             '648': FGTVM64PAYG648
             '702': FGTVM64PAYG702
             '703': FGTVM64PAYG703
-            '721': FGTVM64PAYG721
+            '721': FGTVM64PAYG722
         FortiAnalyzerPayg:
             '647': FAZVM64PAYG647
         FortiAnalyzerByol:
             '647': FAZVM64BYOL647
     AWSAMIRegionMap:
         AMI:
-            FGTVM64PAYG721: >-
-                aws-marketplace/FortiGate-VM64-AWSONDEMAND build1254 (7.2.1)
+            FGTVM64PAYG722: >-
+                aws-marketplace/FortiGate-VM64-AWSONDEMAND build1255 (7.2.2)
                 GA-3124a694-441c-4ff1-8bf7-4d153be424a6
-            FGTVM64BYOL721: >-
-                aws-marketplace/FortiGate-VM64-AWS build1254 (7.2.1)
+            FGTVM64BYOL722: >-
+                aws-marketplace/FortiGate-VM64-AWS build1255 (7.2.2)
                 GA-e5936f4a-0d69-479f-919c-d5e158bd4d12
             FGTVM64BYOL702: >-
                 aws-marketplace/FortiGate-VM64-AWS build0234 (7.0.2)

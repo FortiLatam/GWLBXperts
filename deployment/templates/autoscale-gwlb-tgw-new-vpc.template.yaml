@@ -222,9 +222,9 @@ Parameters:
             https://aws.amazon.com/ec2/instance-types/.
     FortiOSVersion:
         Type: String
-        Default: 7.2.1
+        Default: 7.2.2
         AllowedValues:
-            - 7.2.1
+            - 7.2.2
             - 7.0.3
             - 7.0.2
             - 6.4.8
