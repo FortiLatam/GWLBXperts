@@ -1580,7 +1580,7 @@ Resources:
             # us-east-1 Ubuntu
             ImageId: !FindInMap [RegionMap, !Ref "AWS::Region", UVM64]
             # us-east-2 Ubuntu
-            #ImageId: ami-097a2df4ac947655f
+            ImageId: ami-097a2df4ac947655f
             InstanceType: t3.medium            
             KeyName: !Ref KeyPairName
             #KeyName:
