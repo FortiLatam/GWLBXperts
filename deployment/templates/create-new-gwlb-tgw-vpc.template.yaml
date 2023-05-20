@@ -1,5 +1,12 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: This template creates a new VPC to deploy the FortiGate Autoscale Solution.
+Mappings: 
+  RegionMap: 
+    us-east-1:
+      UVM64: ami-052efd3df9dad4825
+    us-east-2:
+      UVM64: ami-097a2df4ac947655f
+
 Parameters:
     KeyPairName:
         Type: 'AWS::EC2::KeyPair::KeyName'
@@ -1571,7 +1578,7 @@ Resources:
         Type: AWS::EC2::Instance
         Properties:
             # us-east-1 Ubuntu
-            ImageId: ami-052efd3df9dad4825
+            ImageId: !FindInMap [RegionMap, !Ref "AWS::Region", UVM64]
             # us-east-2 Ubuntu
             #ImageId: ami-097a2df4ac947655f
             InstanceType: t3.medium            
@@ -1847,6 +1854,7 @@ Resources:
 
                             config system global
                                 set admin-sport "{ADMIN_PORT}"
+                                set admintimeout 50
                             end
 
                             execute update-ips
