@@ -1016,7 +1016,7 @@ Resources:
         Properties:
             DestinationCidrBlock: !Ref Spoke1PublicSubnet1Cidr
             RouteTableId: !Ref Spoke1PublicSubnet2RouteTable
-            VpcEndpointId: !Ref Endpoint2SecSpoke
+            VpcEndpointId: !Ref Endpoint1SecSpoke
 
     Spoke1PublicSubnet2Route3:
         Type: 'AWS::EC2::Route'
@@ -1033,7 +1033,7 @@ Resources:
         Properties:
             DestinationCidrBlock: !Ref Spoke1PrivateSubnet1Cidr
             RouteTableId: !Ref Spoke1PublicSubnet2RouteTable
-            VpcEndpointId: !Ref Endpoint2SecSpoke
+            VpcEndpointId: !Ref Endpoint1SecSpoke
     Spoke1PublicSubnet2Route5:
         Type: 'AWS::EC2::Route'
         Properties:
@@ -1194,7 +1194,7 @@ Resources:
         Properties:
             DestinationCidrBlock: !Ref Spoke1PublicSubnet1Cidr
             RouteTableId: !Ref Spoke1PrivateSubnet2RouteTable
-            VpcEndpointId: !Ref Endpoint2SecSpoke
+            VpcEndpointId: !Ref Endpoint1SecSpoke
 
 
     Spoke1PrivateSubnet2Route4:
@@ -1208,7 +1208,7 @@ Resources:
         Properties:
             DestinationCidrBlock: !Ref Spoke1PrivateSubnet1Cidr
             RouteTableId: !Ref Spoke1PrivateSubnet2RouteTable
-            VpcEndpointId: !Ref Endpoint2SecSpoke
+            VpcEndpointId: !Ref Endpoint1SecSpoke
 
 
 #Spoke1GWLBSubnet1
@@ -1593,11 +1593,13 @@ Resources:
                  sudo apt update -y
                  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y docker.io git pip
                  sudo useradd -s /bin/bash -m -p "$y$j9T$bmx00ZfxMDzyZMb6Sy25u1$jI4bEqewOqH88OSWmlu1ILUDoPnqY31T8NLeyczh088" student
-                 sudo mkdir /home/student/log4j-shell-poc
-                 sudo git clone https://github.com/kozmer/log4j-shell-poc.git /home/student
+                 sudo git clone https://github.com/FortiLatam/log4j-shell-poc.git 
+                 cd log4j-shell-poc
+                 sudo wget https://eventco2022.s3.amazonaws.com/jdk-8u20-linux-x64.tar.gz
+                 sudo tar -xzf jdk-8u20-linux-x64.tar.gz
+                 cd /
+                 sudo mv log4j-shell-poc/ /home/student/
                  sudo pip install -r /home/student/log4j-shell-poc/requirements.txt  
-                 sudo wget https://eventco2022.s3.amazonaws.com/jdk-8u20-linux-x64.tar.gz -P /home/student/log4j-shell-poc/
-                 sudo tar -xzf /home/student/log4j-shell-poc/jdk-8u20-linux-x64.tar.gz /home/student/log4j-shell-poc/
                  sudo chown -R student:student /home/student
                  sudo DEBIAN_FRONTEND=noninteractive apt install gnome-session gdm3 -y
                  sudo DEBIAN_FRONTEND=noninteractive apt install xrdp firefox -y
